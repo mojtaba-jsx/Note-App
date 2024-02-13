@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'TitanOne-Regular';
+    src: url('../fonts/TitanOne-Regular.ttf');
+}
+
+.header-title{
+    font-size: 4rem;
+    font-family: 'TitanOne-Regular', Courier, monospace;
+    text-align: center;
+    color: #ffff;
+    transition: all 140ms ease-in;
+    cursor: pointer;
+}
+
+.header-title:hover{
+    color: #E0F4FF;
+    transform: scaleY(1.1);
+}
+
+.note-input input{
+    display: block;
+    margin: 0 auto;
+    padding: 1.4rem 20rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transition: all 140ms ease-in;
+    font-family: 'TitanOne-Regular', Courier, monospace;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.note-input input::placeholder{
+    font-family: 'TitanOne-Regular', Courier, monospace;
+    color: black;
+}
+
+.note-input input:focus{
+    transform: scale(1.1);
+}
+
+
+.colors__box{
+    width: 40rem;
+    /* background-color: blue; */
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.colors__box__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.note-ap-btns button{
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: all 140ms ease-in;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.note-ap-btns button:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+}
+.note-ap-btns button svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.add-btn,.clear-input{
+    display: flex;
+    align-items: center;
+    font-family: 'TitanOne-Regular', Courier, monospace;
+    
+}
+
+.add-btn{
+    background-color: #15F5BA;
+}
+
+.clear-input{
+    background-color: #D24545;
+}
+
+.note-ap-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.notes{
+    width: 1400px;
+    display: block;
+    margin: 0 auto;
+}
+.notes__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-around;
+}

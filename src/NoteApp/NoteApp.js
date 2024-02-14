@@ -12,7 +12,7 @@ class NoteApp extends Component {
         { id: 1, name: "#15F5BA" },
         { id: 2, name: "#7F27FF" },
         { id: 3, name: "#0C2D57" },
-        { id: 4, name: "#864AF9" },
+        { id: 4, name: "#FFFC9B" },
         { id: 5, name: "#D24545" },
         { id: 6, name: "#92C7CF" },
         { id: 7, name: "#86B6F6" },
@@ -21,7 +21,33 @@ class NoteApp extends Component {
       noteTitle: "",
       inputColor: "#ffff",
     };
+
+
+    this.noteTitleHandler =this.noteTitleHandler.bind(this)
+    this.inputColorHandler =this.inputColorHandler.bind(this)
+    this.emptyNoteTitle =this.emptyNoteTitle.bind(this)
   }
+
+  //! Methods
+  noteTitleHandler(event){
+    this.setState({
+      noteTitle:event.target.value
+    })
+  }
+
+  inputColorHandler(color){
+    this.setState({
+      inputColor:color
+    })
+  }
+
+  emptyNoteTitle(){
+    this.setState({
+      noteTitle:''
+    })
+  }
+
+
 
   render() {
     return (
@@ -31,18 +57,18 @@ class NoteApp extends Component {
         </header>
 
         <form className="note-input">
-          <input type="text" placeholder="Enter Your Note ..." />
+          <input type="text" placeholder="Enter Your Note ..." value={this.state.noteTitle} onChange={this.noteTitleHandler} style={{backgroundColor:this.state.inputColor}} />
         </form>
 
         <div className="colors__box">
           <div className="colors__box__wrapper">
             {this.state.colors.map((color) => (
-              <ColorBox {...color} key={color.id} />
+              <ColorBox {...color} key={color.id} onColor={this.inputColorHandler} />
             ))}
           </div>
         </div>
 
-        <div className="note-ap-btns">
+        <div className="note-app-btns">
           <button className="add-btn">
             Add Note
             <svg
@@ -60,7 +86,7 @@ class NoteApp extends Component {
               />
             </svg>
           </button>
-          <button className="clear-input">
+          <button className="clear-input" onClick={this.emptyNoteTitle}>
             Clear Input
             <svg
               xmlns="http://www.w3.org/2000/svg"

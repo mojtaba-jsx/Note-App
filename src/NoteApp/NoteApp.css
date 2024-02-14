@@ -54,7 +54,7 @@
     align-items: center;
     /* justify-content: space-around; */
 }
-.note-ap-btns button{
+.note-app-btns button{
     padding: 1rem 4rem;
     border-radius: 1rem;
     outline: none;
@@ -65,11 +65,11 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.note-ap-btns button:hover{
+.note-app-btns button:hover{
     cursor: pointer;
     transform: scale(1.06);
 }
-.note-ap-btns button svg {
+.note-app-btns button svg {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -89,7 +89,7 @@
     background-color: #D24545;
 }
 
-.note-ap-btns{
+.note-app-btns{
     display: flex;
     justify-content: center;
     margin-top: 2rem;

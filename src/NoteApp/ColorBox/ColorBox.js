@@ -6,13 +6,13 @@ class ColorBox extends Component {
 clickHandler(color){
   this.props.onColor(color)
 }
-
-  render() {
+render() {
+    let {color} = this.props
     return (
       <div
         className="color-box"
-        onClick={this.clickHandler.bind(this,this.props.name)}
-        style={{ backgroundColor: `${this.props.name}` }}
+        onClick={this.clickHandler.bind(this,color)}
+        style={{ backgroundColor: color }}
       >
       </div>
     );

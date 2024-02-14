@@ -86,7 +86,14 @@
 }
 
 .clear-input{
-    background-color: #D24545;
+    background-color: #ded9d9;
+}
+
+.clear-notes{
+    display: flex;
+    align-items: center;
+    background-color: #ec2525;
+    font-family: 'TitanOne-Regular', Courier, monospace;
 }
 
 .note-app-btns{
@@ -106,3 +113,4 @@
     margin-top: 2rem;
     justify-content: space-around;
 }
+

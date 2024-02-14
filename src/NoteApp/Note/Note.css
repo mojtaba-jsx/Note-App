@@ -23,7 +23,7 @@
   font-family: "TitanOne-Regular", Courier, monospace;
   margin-left: 1rem;
   margin-top: 1rem;
-  color: #ffff;
+  color: black;
 }
 .note-icon svg {
   width: 1.4rem;
@@ -36,5 +36,5 @@
   text-align: center;
   margin-top: 2rem;
   font-family: "TitanOne-Regular", Courier, monospace;
-  color: #ffff;
+  color: black;
 }

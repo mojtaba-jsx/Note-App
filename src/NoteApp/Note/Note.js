@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./Note.css";
 class Note extends Component {
   render() {
+    let {title,color} =this.props
     return (
-      <div className="note">
+      <div className="note" style={{backgroundColor:color}}>
         <span className="note-icon">
           Your Note
           <svg
@@ -22,7 +23,7 @@ class Note extends Component {
           </svg>
         </span>
         <span className="note-text">
-          Enter The Text
+          {title}
         </span>
       </div>
     );

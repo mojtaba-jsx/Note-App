@@ -27,6 +27,7 @@ class NoteApp extends Component {
     this.emptyNoteTitle = this.emptyNoteTitle.bind(this);
     this.addNote = this.addNote.bind(this);
     this.clearNotes = this.clearNotes.bind(this);
+    this.removeNote = this.removeNote.bind(this);
   }
 
   //! Methods
@@ -58,7 +59,7 @@ class NoteApp extends Component {
 
     this.setState((prevState) => {
       return {
-        notes: [...this.state.notes, newNoteObject],
+        notes: [...prevState.notes, newNoteObject],
         noteTitle:''
       };
     });
@@ -69,6 +70,16 @@ class NoteApp extends Component {
       notes:[]
     })
   }
+
+  removeNote(noteId){
+    let newNotesArray =this.state.notes.filter((note)=>{
+      return note.id !== noteId 
+    })
+    this.setState({
+      notes:newNotesArray
+    })
+  }
+
 
   render() {
     return (
@@ -156,7 +167,7 @@ class NoteApp extends Component {
         <div className="notes">
           <div className="notes__wrapper">
             {this.state.notes.map((note) => (
-              <Note {...note} key={note.id} />
+              <Note {...note} key={note.id} onRemove={this.removeNote} />
             ))}
           </div>
         </div>

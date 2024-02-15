@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "./Note.css";
 class Note extends Component {
+  clickHandler(id) {
+    this.props.onRemove(id);
+  }
+
   render() {
-    let {title,color} =this.props
+    let { title, color, id } = this.props;
     return (
-      <div className="note" style={{backgroundColor:color}}>
+      <div className="note" style={{ backgroundColor: color }}>
         <span className="note-icon">
           Your Note
           <svg
@@ -22,9 +26,22 @@ class Note extends Component {
             />
           </svg>
         </span>
-        <span className="note-text">
-          {title}
-        </span>
+        <span className="note-text">{title}</span>
+        <svg
+          onClick={this.clickHandler.bind(this, id)}
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 note-delete"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
       </div>
     );
   }

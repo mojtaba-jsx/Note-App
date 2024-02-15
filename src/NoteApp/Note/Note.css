@@ -5,16 +5,16 @@
 .note {
   width: 20rem;
   height: 10rem;
-  background-color: #7B61FF;
+  background-color: #7b61ff;
   border-radius: 1rem;
   margin-bottom: 2rem;
 
-  background: rgba( 43, 43, 44, 0.45 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
+  background: rgba(43, 43, 44, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .note-icon {
@@ -37,4 +37,22 @@
   margin-top: 2rem;
   font-family: "TitanOne-Regular", Courier, monospace;
   color: black;
+}
+
+.note {
+  position: relative;
+}
+.note-delete {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: none;
+  cursor: pointer;
+  color: red;
+  transition: all 140ms ease-in;
+}
+.note:hover .note-delete {
+  display: block;
 }

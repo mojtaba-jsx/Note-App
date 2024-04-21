@@ -1,5 +1,5 @@
 
-# TodoList
+# NoteApp
 
 Hi Guys
 I hope you have a good day This Template Developed By This Techs In Responsive:
@@ -10,11 +10,11 @@ I hope you have a good day This Template Developed By This Techs In Responsive:
 
 ![React Js](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 
-[You Can See online This Project Click Me :)](https://mojtaba-jsx.github.io/Todo-List/)
+[You Can See online This Project Click Me :)](https://mojtaba-jsx.github.io/Note-App/)
 
 And You Can See The Image Of This Template:
 
  
-![Logo](https://github.com/mojtaba-jsx/Todo-List/blob/main/public/Capture.PNG)
+![Logo](https://github.com/mojtaba-jsx/Note-App/blob/main/public/Capture.PNG)
 
 

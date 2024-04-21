@@ -1,116 +1,192 @@
 @font-face {
-    font-family: 'TitanOne-Regular';
-    src: url('../fonts/TitanOne-Regular.ttf');
+  font-family: "TitanOne-Regular";
+  src: url("../fonts/TitanOne-Regular.ttf");
 }
 
-.header-title{
-    font-size: 4rem;
-    font-family: 'TitanOne-Regular', Courier, monospace;
-    text-align: center;
-    color: #ffff;
-    transition: all 140ms ease-in;
-    cursor: pointer;
+.note-app {
+  width: 1200px;
+  /* background-color: red; */
+  margin: 0 auto;
+}
+.header-title {
+  font-size: 4rem;
+  font-family: "TitanOne-Regular", Courier, monospace;
+  text-align: center;
+  color: #ffff;
+  transition: all 140ms ease-in;
+  cursor: pointer;
 }
 
-.header-title:hover{
-    color: #E0F4FF;
-    transform: scaleY(1.1);
+.header-title:hover {
+  color: #e0f4ff;
+  transform: scaleY(1.1);
+}
+.note-input {
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.note-input input{
-    display: block;
-    margin: 0 auto;
-    padding: 1.4rem 20rem;
-    border-radius: 1rem;
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-    transition: all 140ms ease-in;
-    font-family: 'TitanOne-Regular', Courier, monospace;
+.note-input input {
+  width: 30rem;
+  height: 4rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  /* padding: 1.4rem 20rem; */
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  transition: all 140ms ease-in;
+  font-family: "TitanOne-Regular", Courier, monospace;
 
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.note-input input::placeholder{
-    font-family: 'TitanOne-Regular', Courier, monospace;
-    color: black;
-}
-
-.note-input input:focus{
-    transform: scale(1.1);
-}
-
-
-.colors__box{
-    width: 40rem;
-    /* background-color: blue; */
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: 1rem;
-}
-.colors__box__wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* justify-content: space-around; */
-}
-.note-app-btns button{
-    padding: 1rem 4rem;
-    border-radius: 1rem;
-    outline: none;
-    border: none;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    transition: all 140ms ease-in;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+.note-input input::placeholder {
+  font-family: "TitanOne-Regular", Courier, monospace;
+  color: black;
 }
 
-.note-app-btns button:hover{
-    cursor: pointer;
-    transform: scale(1.06);
+.note-input input:focus {
+  transform: scale(1.01);
+}
+
+.colors__box {
+  width: 40rem;
+  /* background-color: blue; */
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.colors__box__wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.note-app-btns button {
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: all 140ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.note-app-btns button:hover {
+  cursor: pointer;
+  transform: scale(1.06);
 }
 .note-app-btns button svg {
-    width: 2.5rem;
-    height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.add-btn,.clear-input{
-    display: flex;
-    align-items: center;
-    font-family: 'TitanOne-Regular', Courier, monospace;
-    
+.add-btn,
+.clear-input {
+  display: flex;
+  align-items: center;
+  font-family: "TitanOne-Regular", Courier, monospace;
 }
 
-.add-btn{
-    background-color: #15F5BA;
+.add-btn {
+  background-color: #15f5ba;
 }
 
-.clear-input{
-    background-color: #ded9d9;
+.clear-input {
+  background-color: #ded9d9;
 }
 
-.clear-notes{
-    display: flex;
-    align-items: center;
-    background-color: #ec2525;
-    font-family: 'TitanOne-Regular', Courier, monospace;
+.clear-notes {
+  display: flex;
+  align-items: center;
+  background-color: #ec2525;
+  font-family: "TitanOne-Regular", Courier, monospace;
 }
 
-.note-app-btns{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+.note-app-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.notes{
-    width: 1400px;
-    display: block;
-    margin: 0 auto;
+.notes {
+  /* width: 1400px; */
+  display: block;
+  margin: 0 auto;
 }
-.notes__wrapper{
-    display: flex;
+.notes__wrapper {
+  margin: 0 auto;
+  margin-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 1220px) {
+  .note-app {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .note-app-btns {
     flex-wrap: wrap;
-    margin-top: 2rem;
-    justify-content: space-around;
+  }
+  .note-app-btns button {
+    margin-bottom: 1rem;
+  }
 }
-
+@media screen and (max-width: 900px) {
+  .note-app {
+    width: 600px;
+  }
+  .colors__box {
+    width: 20rem;
+  }
+  .colors__box__wrapper {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 618px) {
+  .note-app {
+    width: 400px;
+  }
+  .note-input input {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .note-app {
+    width: 320px;
+    padding: 1rem;
+  }
+  .note-input input {
+    width: 16rem;
+  }
+  .colors__box__wrapper {
+    flex-wrap: wrap;
+  }
+  .colors__box,
+  .colors__box__wrapper {
+    width: 14rem;
+  }
+  .color-box {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .note-app {
+    width: 280px;
+  }
+  .note-app-btns button {
+    padding: 1rem 2rem;
+  }
+}

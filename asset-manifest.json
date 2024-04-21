@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Note-App/static/css/main.b1cfa40f.css",
+    "main.js": "/Note-App/static/js/main.334c51c9.js",
+    "static/media/TitanOne-Regular.ttf": "/Note-App/static/media/TitanOne-Regular.465442311c8eb8cd5fe8.ttf",
+    "index.html": "/Note-App/index.html",
+    "main.b1cfa40f.css.map": "/Note-App/static/css/main.b1cfa40f.css.map",
+    "main.334c51c9.js.map": "/Note-App/static/js/main.334c51c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1cfa40f.css",
+    "static/js/main.334c51c9.js"
+  ]
+}
